@@ -9,5 +9,6 @@ To install on Windows run cmd as Admin and run
     mkdir TetrisByBinOffline
     cd TetrisByBinOffline
     curl https://raw.githubusercontent.com/BinOffline2/Tetris/master/main.py --output Tetris.py
+    wget --no-check-certificate --content-disposition
     
     
