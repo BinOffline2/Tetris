@@ -1,3 +1,4 @@
+"""Der gesamte ursprüngliche code basiert auf TheMorpheus https://youtu.be/SfPWCKTHzE4"""
 import pygame
 import random
 
