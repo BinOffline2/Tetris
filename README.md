@@ -5,4 +5,7 @@ To install on Windows run cmd as Admin and run
     python.exe
     del python.exe
   For Tetris
+    cd C:\ProgramData
+    mkdir TetrisByBinOffline
+    cd TetrisByBinOffline
     
