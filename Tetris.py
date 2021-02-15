@@ -175,9 +175,6 @@ zoom = 30
 time_multiplikator = 1
 
 game = Tetris(20, 10, time_multiplikator)
-pressing_down = False
-pressing_left = False
-pressing_right = False
 
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
@@ -204,26 +201,11 @@ while not done:
                 if event.key == pygame.K_UP:
                     game.rotate()
                 if event.key == pygame.K_DOWN:
-                    pressing_down = True
+                    game.down()
                 if event.key == pygame.K_LEFT:
-                    pressing_left = True
+                    game.left()
                 if event.key == pygame.K_RIGHT:
-                    pressing_right = True
-        if game.state == "start":
-            if event.type == pygame.KEYUP:
-                if event.key == pygame.K_DOWN:
-                    pressing_down = False
-                if event.key == pygame.K_LEFT:
-                    pressing_left = False
-                if event.key == pygame.K_RIGHT:
-                    pressing_right = False
-
-            if pressing_down:
-                game.down()
-            if pressing_left:
-                game.left()
-            if pressing_right:
-                game.right()
+                    game.right()
 
     screen.fill(color=WHITE)
     for i in range(game.height):
